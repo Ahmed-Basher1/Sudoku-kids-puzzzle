@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Board</title>
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/sudoko.css">
+    <style>
+        
+    </style>
+</head>
+<body id = "sudokugame">
+    <div id="message">
+        <form>
+            <h1 id="msg">Congeratulation, you win </h1>
+            <img src="images/happy.png" />
+            <h3>Do you want to play again?</h3>
+            <input id="yesBtn" type="submit" value="Yes"> 
+            <input id="noBtn"  type="submit" value="No">
+        
+        </form>
+  </div>
+  <div id="timer" class="hide">
+   <h1 id="time"><span>00:00</span></h1> 
+  </div>
+  <div class=" text-center hide" id ="startBtn">
+      <input type="button" value="start" class="btn btn-success">
+  </div>
+  <div class=" theNameheader p-2 ">
+      <p id ="name" class="hide"></p>
+  </div>
+    <div class="row g-0 container-fluid p-2">
+        <h2 class="col-12 p3 text-center text-light">Choose Your Play Cards</h2>
+        <div class="col-5 p-3 text-center cards" id="group1">
+            <img class="my-1" src="./images/group1/1.png">
+            <img src="./images/group1/2.png">
+            <img class="my-1" src="./images/group1/3.png">
+            <img src="./images/group1/4.png">
+            <button class="btn btn-success mt-2" type="submit" value="1">Group 1</button>
+        </div>
+        
+        <div class="col-5 p-3 text-center cards" id="group2">
+            <img class="my-1" src="./images/group2/5.png">
+            <img src="./images/group2/6.png">
+            <img class="my-1" src="./images/group2/7.png" >
+            <img src="./images/group2/8.png">
+            <button class="btn btn-success mt-2" type="submit" value="2">Group 2</button>
+
+        </div>
+        
+        <div class="col-5 p-3 text-center cards" id="group3">
+            <img class="my-1"  src="./images/group3/9.png">
+            <img src="./images/group3/10.png">
+            <img class="my-1" src="./images/group3/11.png">
+            <img src="./images/group3/12.png">
+            <button class="btn btn-success mt-2" type="submit" value="3" >Group 3</button>
+
+        </div>
+        
+        <div class="col-5 p-3 text-center cards" id="group4">
+            <img class="my-1" src="./images/group4/13.png">
+            <img src="./images/group4/14.png">
+            <img class="my-1" src="./images/group4/15.png">
+            <img src="./images/group4/16.png">
+            <button class="btn btn-success mt-2" type="submit" value="4">Group 4</button>
+
+        </div>
+    </div>  
+    <!-- end of images option -->
+    
+    <!-- sudoku 4*4 grid -->
+    <div  id="box4" >  
+
+    </div>
+    <div class="bigBoard" id="box9">
+
+    </div>
+    <!-- end of 4*4 board -->
+
+    <!-- playing cards 4*4-->
+    <div class="playcards4  text-center">
+
+    </div>
+
+  
+
+
+
+    <script src="./script/js/bootstrap.js"></script>
+    <script src="./script/sudokuBoard.js" ></script>
+
+</body>
+</html>
